@@ -24,7 +24,7 @@ choco install -y microsoft-windows-terminal
 
 
 # Create the needed folders in users directory
-new-item $HOME\user_docs -itemtype directory
+new-item $HOME\docs -itemtype directory
 new-item $HOME\source -itemtype directory
 new-item $HOME\github -itemtype directory
 new-item $HOME\blender -itemtype directory
