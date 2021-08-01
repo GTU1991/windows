@@ -1,2 +1,2 @@
 # windows
-This repository includes various windows configuration scripts and programs
+Windows-related script and config file collection
