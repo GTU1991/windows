@@ -20,7 +20,7 @@ if ("y" -eq $chocolatey_install_status)
 # Install Applications using chocolatey
 choco upgrade -y chocolatey
 choco install -y 7zip blender vscode git
-choco install -y microsoft-windows-terminal
+choco install -y microsoft-windows-terminal msys2
 
 
 # Create the needed folders in users directory
