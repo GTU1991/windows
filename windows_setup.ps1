@@ -22,8 +22,13 @@ choco upgrade -y chocolatey
 choco install -y 7zip blender
 choco install -y microsoft-windows-terminal vscode git mingw  # minGW-w64 is installed by mingw package, visualstudio2019-workload-nativedesktop installs the C/C++ development components
 choco install -y cmake --installargs 'ADD_CMAKE_TO_PATH=User' # add cmake to the path in addition to installing
-choco install -y visualstudio2019community --package-parameters "--add Microsoft.VisualStudio.Workload.NativeDesktop" # Install Visual Studio with C/C++ development workload(tools). All Visual Studio Installed command line parameters - https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio
-#	choco install -y visualstudio2019-workload-nativedesktop # install the development workload after Visual Studio is already installed('--package-parameters "--add Microsoft.VisualStudio.Workload.NativeDesktop"' may be needed for this package)
+
+
+# Install Visual Studio
+# Visual Studio installer CLI parameters - https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio
+choco install -y visualstudio2019community --package-parameters "--add Microsoft.VisualStudio.Workload.NativeDesktop"	# Install Visual Studio, and also using the package parameters install the "C/C++ Desktop Development" workload
+choco install -y visualstudio2019-workload-nativedesktop --package-parameters "--add Microsoft.VisualStudio.Workload.NativeDesktop"	# Install the "C/C++ Desktop Development" workload using another package if it wasn't installed with the default installation. visualstudio2019-workload-nativedesktop package does not install anything unless parameters are passed to it specifying what to install
+# choco uninstall -y --force visualstudio2019community	# If the installation goes wrong but the Visual Studio can't be uninstalled in any way, use:
 
 
 # Create the needed folders in users directory
