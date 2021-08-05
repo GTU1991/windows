@@ -20,8 +20,10 @@ if ("y" -eq $chocolatey_install_status)
 # Install Applications using chocolatey
 choco upgrade -y chocolatey
 choco install -y 7zip blender
-choco install -y microsoft-windows-terminal vscode git mingw visualstudio2019community # minGW-w64 is installed by mingw package
-choco install -y cmake --installargs 'ADD_CMAKE_TO_PATH=User' # make sure that cmake is added to path
+choco install -y microsoft-windows-terminal vscode git mingw  # minGW-w64 is installed by mingw package, visualstudio2019-workload-nativedesktop installs the C/C++ development components
+choco install -y cmake --installargs 'ADD_CMAKE_TO_PATH=User' # add cmake to the path in addition to installing
+choco install -y visualstudio2019community --package-parameters "--add Microsoft.VisualStudio.Workload.NativeDesktop" # Install Visual Studio with C/C++ development workload(tools). All Visual Studio Installed command line parameters - https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio
+#	choco install -y visualstudio2019-workload-nativedesktop # install the development workload after Visual Studio is already installed('--package-parameters "--add Microsoft.VisualStudio.Workload.NativeDesktop"' may be needed for this package)
 
 
 # Create the needed folders in users directory
