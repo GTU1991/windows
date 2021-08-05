@@ -1,7 +1,22 @@
 ## Creating a mod
 1. [Setup the Source SDK 2013 environment](https://developer.valvesoftware.com/wiki/Source_SDK_2013)
-	* Use command line git to clone the SDK git repo
-	* Just for convinience, install visual studio into `Program Files (x86)\Microsoft Visual Studio\2013` folder
+	* **Make Sure To Complete all Steps**
+	* `Getting the code` step
+		* Use command line git to clone the SDK git repo
+		* Just for convinience, clone valve's `source-sdk-2013` repo into `<USER_HOME_DIR>\source\`
+	* `Step One: Installing Visual Studio`
+		* Just for convinience, install visual studio into `Program Files (x86)\Microsoft Visual Studio\2013` folder
+	* `Step Two: Installing the Microsoft Speech SDK`
+		* By `<SDKROOT>` in Speech SDK step, the cloned [source SDK git repo](https://github.com/ValveSoftware/source-sdk-2013) is meant
+		* Normally just copy it into the sp folder as it is for singleplayer, while mp is for mods that will be hosted on the server
+	* `Step Three: Compiling the Source SDK and preparing project files`
+		* Do not compile files in mp if the mod isn't for hosting on a server
+	* `Step Four : Building the shaders`
+		* Read and follow everything on shader [wiki link](https://developer.valvesoftware.com/wiki/Source_SDK_2013:_Shader_Authoring)
+		* `Installing Perl` step
+			* To install the perl package using perl package manager type `ppm install String-CRC32`. [Instruction's source](https://code.activestate.com/ppm/String-CRC32/).
+		* `Creating your game_shader_dx9 project` step
+			* The direcotry path's specified here are meant to be prefixed with `<SDKROOT>\<MODE>\`. `<SDKROOT>` is the cloned [source SDK git repo](https://github.com/ValveSoftware/source-sdk-2013), `<MODE>` is either the sp(singleplayer) or mp(multiplayer) folder
 
 
 ## Solving Errors
@@ -14,6 +29,7 @@
 	6. Go to `This PC` in explorer, right click on mounted iso and press `Eject`
 	7. Go to folder with extracted files and run the `.exe` file
 	* Just for convinience, install visual studio into `Program Files (x86)\Microsoft Visual Studio\2013` folder
+	* [Video tutorial](https://www.youtube.com/watch?v=TPI9kuAWdCk)
 
 
 
