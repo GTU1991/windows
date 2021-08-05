@@ -1,7 +1,7 @@
 ## Creating a mod
 1. [Setup the Source SDK 2013 environment](https://developer.valvesoftware.com/wiki/Source_SDK_2013)
 	* Use command line git to clone the SDK git repo
-
+	* Just for convinience, install visual studio into `Program Files (x86)\Microsoft Visual Studio\2013` folder
 
 
 ## Solving Errors
@@ -13,6 +13,7 @@
 	5. Copy all the files from the mounted iso to some folder on the computer
 	6. Go to `This PC` in explorer, right click on mounted iso and press `Eject`
 	7. Go to folder with extracted files and run the `.exe` file
+	* Just for convinience, install visual studio into `Program Files (x86)\Microsoft Visual Studio\2013` folder
 
 
 
