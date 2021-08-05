@@ -19,8 +19,9 @@ if ("y" -eq $chocolatey_install_status)
 
 # Install Applications using chocolatey
 choco upgrade -y chocolatey
-choco install -y 7zip blender vscode git
-choco install -y microsoft-windows-terminal msys2
+choco install -y 7zip blender
+choco install -y microsoft-windows-terminal vscode git mingw visualstudio2019community # minGW-w64 is installed by mingw package
+choco install -y cmake --installargs 'ADD_CMAKE_TO_PATH=User' # make sure that cmake is added to path
 
 
 # Create the needed folders in users directory
@@ -28,6 +29,11 @@ new-item $HOME\docs -itemtype directory
 new-item $HOME\source -itemtype directory
 new-item $HOME\github -itemtype directory
 new-item $HOME\blender -itemtype directory
+
+
+# Disable unneeded features
+Disable-WindowsOptionalFeature –Online -FeatureName "Internet-Explorer-Optional-amd64"
+Disable-WindowsOptionalFeature -Online -FeatureName "WindowsMediaPlayer"
 
 
 # ToDo by hand
