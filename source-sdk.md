@@ -3,7 +3,7 @@
 	* **Make Sure To Complete all Steps**
 	* `Getting the code` step
 		* Use command line git to clone the SDK git repo
-		* Just for convinience, clone valve's `source-sdk-2013` repo into `<USER_HOME_DIR>\source\`
+		* Just for convinience, clone valve's `source-sdk-2013` repo into `main-storage-foler(any)\source\`
 	* `Step One: Installing Visual Studio`
 		* Just for convinience, install visual studio into `Program Files (x86)\Microsoft Visual Studio\2013` folder
 	* `Step Two: Installing the Microsoft Speech SDK`
@@ -16,7 +16,8 @@
 		* `Installing Perl` step
 			* To install the perl package using perl package manager type `ppm install String-CRC32`. [Instruction's source](https://code.activestate.com/ppm/String-CRC32/).
 		* `Creating your game_shader_dx9 project` step
-			* The direcotry path's specified here are meant to be prefixed with `<SDKROOT>\<MODE>\`. `<SDKROOT>` is the cloned [source SDK git repo](https://github.com/ValveSoftware/source-sdk-2013), `<MODE>` is either the sp(singleplayer) or mp(multiplayer) folder
+			* All direcotry path's specified here are meant to be prefixed with `<SDKROOT>\<MODE>\`. `<SDKROOT>` is the cloned [source SDK git repo](https://github.com/ValveSoftware/source-sdk-2013), `<MODE>` is either the sp(singleplayer) or mp(multiplayer) folder
+			* In the first step it means that you need to create a copy of `game_shader_dx9_episodic.vpc` file and rename that copy to `game_shader_dx9_<your_modname>.vpc`
 
 
 ## Solving Errors
@@ -35,6 +36,7 @@
 
 
 # Installing source SDK
+https://developer.valvesoftware.com/wiki/My_First_Mod
 ## [Install Source SDK 2013](https://developer.valvesoftware.com/wiki/Source_SDK_2013)
 
 ## Resources
