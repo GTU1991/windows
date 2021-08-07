@@ -5,6 +5,7 @@
 # Script setup
 Read-Host "Press enter to continue if you really want to execute the script"
 $chocolatey_install_status = Read-Host "Are you running the script before restarting prompt(y/n): "
+# $folders_creation_path = 
 
 
 # Install chocolatey if it hasn't been installed yet
