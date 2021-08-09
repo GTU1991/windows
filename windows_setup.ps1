@@ -20,7 +20,7 @@ if ("y" -eq $chocolatey_install_status)
 
 # Install Applications using chocolatey
 choco upgrade -y chocolatey
-choco install -y 7zip blender
+choco install -y 7zip blender pidgin
 choco install -y microsoft-windows-terminal vscode git mingw  # minGW-w64 is installed by mingw package, visualstudio2019-workload-nativedesktop installs the C/C++ development components
 choco install -y cmake --installargs 'ADD_CMAKE_TO_PATH=User' # add cmake to the path in addition to installing
 
