@@ -17,3 +17,7 @@
   * Display contents of the environment variable - `$Env:<variable-name>` or `echo $Env:<variable-name>`
   * Change environment var contents - `$Env:<variable-name> = "<new-value>"`
 * `PATH` is also an environment variable that could be changed and accessed in the same way as others, this variable contains the list of dirs where shell can search for commands(binaries)
+
+## Misc
+* To make an app start at windows startup, it should be added to - `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
+* Most applications add themselves to startup by adding entry to a registry, so to remove them from startup they should either be disabled in task manager startup section or their entry should be removed in the registry
