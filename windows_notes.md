@@ -1,5 +1,6 @@
 ## User Specific configuration and data
 * Configuration(and extra data) - if the configuartion files(or some other extra data) of the program aren't located in it's location folder, they can be in
+  * \Users\ - `Some programs just store their config files or folders directly in the users home directory`
   * \Users\USERNAME\Documents
   * [\Users\USERNAME\AppData](https://www.howtogeek.com/318177/what-is-the-appdata-folder-in-windows/) `(It is a hidden folder)`
     * AppData\Roaming - `Contains data and settings that are ment to be transfered between computers, e.g. firefox bookmarks)`
