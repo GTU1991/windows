@@ -19,5 +19,8 @@
 * `PATH` is also an environment variable that could be changed and accessed in the same way as others, this variable contains the list of dirs where shell can search for commands(binaries)
 
 ## Misc
+* To add to or remove items(e.g. folders or executables) from the windows start menu(the one started when pressing windows key), these programs, folders or shortcuts should be removed from or add to
+  * System wide start menu directory(all users have stuff from here in their start menu) - `C:\ProgramData\Microsoft\Windows\Start Menu\Programs`
+  * User local start menu directory(items here are only shown on the start menu of one specific user) - `C:\Users\<User>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs`
 * To make an app start at windows startup, it should be added to - `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
 * Most applications add themselves to startup by adding entry to a registry, so to remove them from startup they should either be disabled in task manager startup section or their entry should be removed in the registry
