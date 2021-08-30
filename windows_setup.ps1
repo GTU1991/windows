@@ -9,6 +9,9 @@ $chocolatey_install_status = Read-Host "Are you running the script before restar
 
 
 # Install chocolatey if it hasn't been installed yet
+# Chcocolatey website - https://chocolatey.org/
+#	* CLI chocolatey version docs - https://docs.chocolatey.org/en-us/choco/
+# 	* Packages list and search - https://community.chocolatey.org/packages
 if ("y" -eq $chocolatey_install_status)
 {
 	Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
