@@ -11,6 +11,9 @@ $chocolatey_install_status = Read-Host "Are you running the script before restar
 # Install chocolatey if it hasn't been installed yet
 # Chcocolatey website - https://chocolatey.org/
 #	* CLI chocolatey version docs - https://docs.chocolatey.org/en-us/choco/
+#		* Before uninstalling any application through windows settings or control panel check if it was installed through chocolatey and if it was then uninstall it through chocolatey
+#			* List all packages installed through chocolatey - "choco list --local-only"
+#			* Uninstall through chocolatey - "choco uninstall <package-name>
 # 	* Packages list and search - https://community.chocolatey.org/packages
 if ("y" -eq $chocolatey_install_status)
 {
