@@ -46,7 +46,7 @@ new-item $HOME\blender -itemtype directory
 
 
 # Disable unneeded features
-Disable-WindowsOptionalFeature –Online -FeatureName "Internet-Explorer-Optional-amd64"
+Disable-WindowsOptionalFeature -Online -FeatureName "Internet-Explorer-Optional-amd64"
 Disable-WindowsOptionalFeature -Online -FeatureName "WindowsMediaPlayer"
 
 
