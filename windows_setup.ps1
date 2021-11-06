@@ -51,11 +51,11 @@ Disable-WindowsOptionalFeature -Online -FeatureName "WindowsMediaPlayer"
 
 
 # ToDo by hand
-Write-Output "To do by manually:
- - Install steam and chrome
- - Install drivers including using Geforce Experience
+# Write-Output "To do by manually:
+#  - Install steam and chrome
+#  - Install drivers including using Geforce Experience
 
- - Configure everything in the settings menu"
+# - Configure everything in the settings menu"
 
 
 ## Notes ##
