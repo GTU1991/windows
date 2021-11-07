@@ -1,5 +1,6 @@
 # Powershell script to setup windows
 ## To run - start powershell with administrator priviledges
+## Use(type into powershell) this command if powershell refuses to execute the script, it disables the execution policy rules that do now allow to run scripts - "Set-ExecutionPolicy Unrestricted" and answer "[A] Yes to All" to the prompt after the command
 
 
 # Script setup
